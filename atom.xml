@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-28T06:08:27.339Z</updated>
+  <updated>2017-08-28T11:14:56.694Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://janszeng.github.io/2017/08/27/%E4%BD%BF%E7%94%A8hexo-yilia-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://janszeng.github.io/2017/08/27/使用hexo-yilia-github搭建个人博客/</id>
     <published>2017-08-27T08:54:22.000Z</published>
-    <updated>2017-08-28T06:08:27.339Z</updated>
+    <updated>2017-08-28T11:14:56.694Z</updated>
     
     <content type="html"><![CDATA[<p>经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。<br><a id="more"></a><!--more--><br>直奔主题，搭建个人博客主要分为以下几步:</p>
 <ul>
