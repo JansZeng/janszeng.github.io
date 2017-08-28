@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-28T05:02:29.821Z</updated>
+  <updated>2017-08-28T06:08:27.339Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://janszeng.github.io/2017/08/27/%E4%BD%BF%E7%94%A8hexo-yilia-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://janszeng.github.io/2017/08/27/使用hexo-yilia-github搭建个人博客/</id>
     <published>2017-08-27T08:54:22.000Z</published>
-    <updated>2017-08-28T05:02:29.821Z</updated>
+    <updated>2017-08-28T06:08:27.339Z</updated>
     
     <content type="html"><![CDATA[<p>经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。<br><a id="more"></a><!--more--><br>直奔主题，搭建个人博客主要分为以下几步:</p>
 <ul>
@@ -41,7 +41,7 @@
 </li>
 <li><p>Ubuntu下安装git <a href="http://www.linuxidc.com/Linux/2016-11/136769.htm" target="_blank" rel="external">参考,猛点这里</a></p>
 </li>
-<li>Centos下安装git <a href="http://www.linuxidc.com/Linux/2015-02/113351.htm" target="_blank" rel="external">参考,猛点这里</a><h3 id="Node-js-安装-Node官网"><a href="#Node-js-安装-Node官网" class="headerlink" title="Node.js 安装(Node官网)"></a>Node.js 安装(<a href="https://nodejs.org/en/" target="_blank" rel="external">Node官网</a>)</h3>值得注意的是，node.js的版本必须6.0以上,出现以下信息就证明安装成功了<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">v6.11.2</div></pre></td></tr></table></figure>
+<li>Centos下安装git <a href="http://www.linuxidc.com/Linux/2015-02/113351.htm" target="_blank" rel="external">参考,猛点这里</a><h3 id="Node-js-安装-Node官网"><a href="#Node-js-安装-Node官网" class="headerlink" title="Node.js 安装(Node官网)"></a>Node.js 安装(<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Node官网</a>)</h3>值得注意的是，node.js的版本必须6.0以上,出现以下信息就证明安装成功了<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">v6.11.2</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="0x02-安装hexo"><a href="#0x02-安装hexo" class="headerlink" title="0x02 安装hexo"></a>0x02 安装hexo</h2><p>在安装hexo之前，先介绍hexo常用的几个命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo g #完整命令为hexo generate,生成静态文件</div><div class="line">hexo s #完整命令为hexo server,启动服务器,本地可以测试</div><div class="line">hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上</div><div class="line">hexo n #完整命令为hexo new,新建一篇文章</div><div class="line">hexo clean #清除当前项目的静态文件</div></pre></td></tr></table></figure></p>
@@ -56,8 +56,12 @@
     
     </summary>
     
-      <category term="blog" scheme="https://janszeng.github.io/categories/blog/"/>
     
+      <category term="blog" scheme="https://janszeng.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://janszeng.github.io/tags/hexo/"/>
+    
+      <category term="yilia" scheme="https://janszeng.github.io/tags/yilia/"/>
     
   </entry>
   
