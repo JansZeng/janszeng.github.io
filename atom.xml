@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-28T11:14:56.694Z</updated>
+  <updated>2017-08-29T12:29:52.533Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -20,16 +20,15 @@
     <link href="https://janszeng.github.io/2017/08/27/%E4%BD%BF%E7%94%A8hexo-yilia-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://janszeng.github.io/2017/08/27/使用hexo-yilia-github搭建个人博客/</id>
     <published>2017-08-27T08:54:22.000Z</published>
-    <updated>2017-08-28T11:14:56.694Z</updated>
+    <updated>2017-08-29T12:29:52.533Z</updated>
     
     <content type="html"><![CDATA[<p>经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。<br><a id="more"></a><!--more--><br>直奔主题，搭建个人博客主要分为以下几步:</p>
 <ul>
 <li>本地环境搭建(win7)</li>
 <li>安装hexo</li>
-<li>git配置</li>
+<li>主题切换</li>
+<li>SSH配置</li>
 <li>域名配置</li>
-<li>发布上线</li>
-<li>配置百度统计</li>
 </ul>
 <p>没错就这上面几步，就能使我们拥有自己的博客网站，帅不帅？酷不酷？</p>
 <hr>
@@ -48,6 +47,46 @@
 <p>输入以下命令安装hexo:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure></p>
 <p>完成后，根据自己的爱好，在硬盘（如：D)上新建一个hexo的目录，然后在该目录依次执行以下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">npm install（用于安装依赖包）</div></pre></td></tr></table></figure></p>
 <p>执行完成后，输入以下命令，然后通过访问:<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，来访问，一个本地博客就可以看到了，值得注意的是，默认主题是landscape，如需要变主题，得自己手动修改。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<h2 id="0x03-主题切换"><a href="#0x03-主题切换" class="headerlink" title="0x03 主题切换"></a>0x03 主题切换</h2><p>本人的主题是 yilia这个主题, <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia地址</a>,在当前项目页,输入以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure></p>
+<p>等待完成，然后:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd themes</div><div class="line">ls -l</div></pre></td></tr></table></figure></p>
+<p>会发现多了一个yilia的目录,然后回到上层,使用sublime或者editplus或者其他文本编辑工具，修改hexo目前下的_config.yml,找到theme项,theme后面的内容修改为yilia,如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: yilia</div><div class="line"></div><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">#coding: git@git.coding.net:JansZeng/hexoblog.git,master</div></pre></td></tr></table></figure></p>
+<p>然后，重新编译，启动：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>,这时看到的页面是不是不一样了?此时，hexo的安装及主题修改已经完成了.是不是很酷?</p>
+<h2 id="0x04-SSH配置"><a href="#0x04-SSH配置" class="headerlink" title="0x04 SSH配置"></a>0x04 SSH配置</h2><ul>
+<li>登录git</li>
+<li>点击new 创建一个项目,填写后面的名字的时候，需要注意，名称必须为 你的github有户名.github.io,这个一定不能出错,然后点击Create repository,这样创建了一个空项目</li>
+<li>接下来配置SSH,执行下列命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;zxxj157391@163.com&quot;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>连续按三次回车，会在 C:\Users\Administrator.ssh 有三个文件，打开id_rsa.pub文件，copy文件中的内容</p>
+<ul>
+<li>点击Settings</li>
+<li>点击 SSH and GPG Keys</li>
+<li>点击 New SSH Key</li>
+<li>将copy的内容copy到 Key 方框中</li>
+<li>点击 Add SSH Key</li>
+<li><p>打开hexo目录下的_config.yml,找到deploy:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">#coding: git@git.coding.net:JansZeng/hexoblog.git,master</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  #repository: https://github.com:JansZeng/janszeng.github.io.git</div><div class="line">  repo:</div><div class="line">    github: git@github.com:JansZeng/janszeng.github.io.git,master</div></pre></td></tr></table></figure>
+</li>
+<li><p>保存后，重新编译，启动：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果出现:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found: git</div></pre></td></tr></table></figure></p>
+<p>执行以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>然后在执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>成功话在浏览器输入:<a href="http://janszeng.github.io">http://janszeng.github.io</a>,这样的话，SSH配置完成了</p>
+<h2 id="0x05-域名配置"><a href="#0x05-域名配置" class="headerlink" title="0x05 域名配置"></a>0x05 域名配置</h2><ul>
+<li>去阿里云购买这自己域名(如： janszeng.top)</li>
+<li>进入阿里云后，配置域名解析(域名 –&gt; 解析  –&gt; 添加解析)</li>
+<li><p>在你上述创建的<a href="https://github.com/JansZeng/janszeng.github.io" target="_blank" rel="external">git地址</a>,创建一个名称为CNAME的文件，内容为你购买的域名,如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">www.janszeng.top</div></pre></td></tr></table></figure>
+</li>
+<li><p>将工程下载到本地，将CNAME文件拖到hexo\source目录下,</p>
+</li>
+<li>保存后，重新编译，启动：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+</li>
+</ul>
 ]]></content>
     
     <summary type="html">
