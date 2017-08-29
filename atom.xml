@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-29T12:29:52.533Z</updated>
+  <updated>2017-08-29T12:41:35.446Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://janszeng.github.io/2017/08/27/%E4%BD%BF%E7%94%A8hexo-yilia-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://janszeng.github.io/2017/08/27/使用hexo-yilia-github搭建个人博客/</id>
     <published>2017-08-27T08:54:22.000Z</published>
-    <updated>2017-08-29T12:29:52.533Z</updated>
+    <updated>2017-08-29T12:41:35.446Z</updated>
     
     <content type="html"><![CDATA[<p>经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。<br><a id="more"></a><!--more--><br>直奔主题，搭建个人博客主要分为以下几步:</p>
 <ul>
@@ -29,6 +29,7 @@
 <li>主题切换</li>
 <li>SSH配置</li>
 <li>域名配置</li>
+<li>鸣谢</li>
 </ul>
 <p>没错就这上面几步，就能使我们拥有自己的博客网站，帅不帅？酷不酷？</p>
 <hr>
@@ -86,6 +87,11 @@
 </li>
 <li>保存后，重新编译，启动：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 </li>
+</ul>
+<h2 id="0x06-鸣谢"><a href="#0x06-鸣谢" class="headerlink" title="0x06 鸣谢"></a>0x06 鸣谢</h2><ul>
+<li><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">litten hexo-theme-yilia</a></li>
+<li><a href="http://www.jianshu.com/p/863f3f2d1733" target="_blank" rel="external">沸沸腾 的使用github+Hexo人人都能拥有一个美美的博客</a></li>
+<li><a href="http://tengj.top/2016/02/20/hexoTotal/" target="_blank" rel="external">嘟嘟独立博客 hexo系列文章</a></li>
 </ul>
 ]]></content>
     
