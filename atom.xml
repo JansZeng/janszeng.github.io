@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-29T12:41:35.446Z</updated>
+  <updated>2017-08-30T09:50:51.449Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -16,9 +16,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo yilia 文章浏览量统计</title>
+    <link href="https://janszeng.github.io/2017/08/30/hexo_yilia_count/"/>
+    <id>https://janszeng.github.io/2017/08/30/hexo_yilia_count/</id>
+    <published>2017-08-30T06:04:22.000Z</published>
+    <updated>2017-08-30T09:50:51.449Z</updated>
+    
+    <content type="html"><![CDATA[<p>上一篇文章，已经比较详细的介绍了如何搭建一个属于自己的专属博客了。现在假如有这样一个需求，我想知道我的博客，每天的访问量大概多少？每天的访问人数大概多少？<br><a id="more"></a><!--more--><br>这时候，就需要用到统计插件了，本人使用2种，<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a>跟<a href="https://web.umeng.com" target="_blank" rel="external">友盟</a></p>
+<h2 id="0x01友盟配置"><a href="#0x01友盟配置" class="headerlink" title="0x01友盟配置"></a>0x01友盟配置</h2><ul>
+<li>获取友盟统计代码<br>先去<a href="https://i.umeng.com/signup" target="_blank" rel="external">友盟官网</a>注册账号,然后,选择站点资料:<br><img src="/assets/img/hexo_count/umeng_details.jpg" alt="umeng_details"><br>点击确定后，在获取代码这栏，根据自己的爱好选择代码，本人选择如下：<img src="/assets/img/hexo_count/umeng_code.jpg" alt="umeng_code"><br>这样友盟的注册已经完成,统计代码也获取到</li>
+<li>配置 yilia<br>新版的yilia如下配置，打开hexo\themes\yilia\layout_partial\footer.ejs,在footer-info，这个div里面，添加你刚刚copy的统计代码,我的如下<img src="/assets/img/hexo_count/umeng_count_code.jpg" alt="umeng_count_code"><br>这样，友盟的统计已经配置好，执行下列代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>然后浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>,这时，在网站底部会有下列显示<img src="/assets/img/hexo_count/umeng_show.jpg" alt="umeng_show"><br>然后，执行下列代码，上传到github:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<h2 id="0x02-不蒜子配置"><a href="#0x02-不蒜子配置" class="headerlink" title="0x02 不蒜子配置"></a>0x02 不蒜子配置</h2><p>不蒜子的配置很简单,先去<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子官网</a>获取代码,修改hexo\themes\yilia\layout_partial\footer.ejs，在后,添加如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script async src=&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>然后，根据个人爱好选择下列代码:<br>网站的总的访问量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;</div><div class="line">	总访问量: &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>网站总的访问人数:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</div><div class="line">	总访客: &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>单页访问量:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;</div><div class="line">  本文总阅读量&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;次</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>下面是本人的一些配置,添加单页访问量,修改hexo\themes\yilia\layout_partial\article.ejs,在&lt;%- partial(‘post/tag’) %&gt; 后添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;</div><div class="line">  |阅读量(&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;)</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>添加总的访问量跟总的访问人数,修改hexo\themes\yilia\layout_partial\footer.ejs:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;div calss=&quot;count-span&quot;&gt;</div><div class="line">	&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;</div><div class="line">		总访问量: &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;|</div><div class="line">	&lt;/span&gt;</div><div class="line">	&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</div><div class="line">		总访客: &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;</div><div class="line">	&lt;/span&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>本人footer.ejs,配置如下<img src="/assets/img/hexo_count/footer_count.jpg" alt="footer_count"><br>然后重新编译，运行，就可以看到如下效果了<img src="/assets/img/hexo_count/busuanzi_count.jpg" alt="busuanzi_count"></p>
+<h2 id="0x03-鸣谢"><a href="#0x03-鸣谢" class="headerlink" title="0x03 鸣谢"></a>0x03 鸣谢</h2><ul>
+<li><a href="http://www.jianshu.com/p/cb0a105d7a81" target="_blank" rel="external">不简单的光  hexo yilia主题增加分享以及访问统计</a></li>
+<li><a href="http://readering.me/hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E5%A2%9E%E5%8A%A0%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1.html" target="_blank" rel="external">ChenJie hexo博客yilia主题优化（一）增加网站统计</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上一篇文章，已经比较详细的介绍了如何搭建一个属于自己的专属博客了。现在假如有这样一个需求，我想知道我的博客，每天的访问量大概多少？每天的访问人数大概多少？&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="https://janszeng.github.io/tags/blog/"/>
+    
+      <category term="hexo" scheme="https://janszeng.github.io/tags/hexo/"/>
+    
+      <category term="yilia" scheme="https://janszeng.github.io/tags/yilia/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用hexo+yilia+github搭建个人博客</title>
-    <link href="https://janszeng.github.io/2017/08/27/%E4%BD%BF%E7%94%A8hexo-yilia-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://janszeng.github.io/2017/08/27/使用hexo-yilia-github搭建个人博客/</id>
+    <link href="https://janszeng.github.io/2017/08/27/hexo_yilia_github_blog/"/>
+    <id>https://janszeng.github.io/2017/08/27/hexo_yilia_github_blog/</id>
     <published>2017-08-27T08:54:22.000Z</published>
     <updated>2017-08-29T12:41:35.446Z</updated>
     

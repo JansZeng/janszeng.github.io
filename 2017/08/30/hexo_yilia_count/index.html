@@ -6,19 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://janszeng.github.io">
-  <title>使用hexo+yilia+github搭建个人博客 | Crawler</title>
+  <title>hexo yilia 文章浏览量统计 | Crawler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。">
+  <meta name="description" content="上一篇文章，已经比较详细的介绍了如何搭建一个属于自己的专属博客了。现在假如有这样一个需求，我想知道我的博客，每天的访问量大概多少？每天的访问人数大概多少？">
 <meta name="keywords" content="blog,hexo,yilia">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo+yilia+github搭建个人博客">
-<meta property="og:url" content="https://janszeng.github.io/2017/08/27/使用hexo-yilia-github搭建个人博客/index.html">
+<meta property="og:title" content="hexo yilia 文章浏览量统计">
+<meta property="og:url" content="https://janszeng.github.io/2017/08/30/hexo_yilia_count/index.html">
 <meta property="og:site_name" content="Crawler">
-<meta property="og:description" content="经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。">
-<meta property="og:updated_time" content="2017-08-29T12:41:35.446Z">
+<meta property="og:description" content="上一篇文章，已经比较详细的介绍了如何搭建一个属于自己的专属博客了。现在假如有这样一个需求，我想知道我的博客，每天的访问量大概多少？每天的访问人数大概多少？">
+<meta property="og:image" content="https://janszeng.github.io/assets/img/hexo_count/umeng_details.jpg">
+<meta property="og:image" content="https://janszeng.github.io/assets/img/hexo_count/umeng_code.jpg">
+<meta property="og:image" content="https://janszeng.github.io/assets/img/hexo_count/umeng_count_code.jpg">
+<meta property="og:image" content="https://janszeng.github.io/assets/img/hexo_count/umeng_show.jpg">
+<meta property="og:image" content="https://janszeng.github.io/assets/img/hexo_count/footer_count.jpg">
+<meta property="og:image" content="https://janszeng.github.io/assets/img/hexo_count/busuanzi_count.jpg">
+<meta property="og:updated_time" content="2017-08-30T09:50:51.449Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用hexo+yilia+github搭建个人博客">
-<meta name="twitter:description" content="经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。">
+<meta name="twitter:title" content="hexo yilia 文章浏览量统计">
+<meta name="twitter:description" content="上一篇文章，已经比较详细的介绍了如何搭建一个属于自己的专属博客了。现在假如有这样一个需求，我想知道我的博客，每天的访问量大概多少？每天的访问人数大概多少？">
+<meta name="twitter:image" content="https://janszeng.github.io/assets/img/hexo_count/umeng_details.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Crawler" type="application/atom+xml">
   
@@ -210,20 +217,20 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-使用hexo-yilia-github搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hexo_yilia_count" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      使用hexo+yilia+github搭建个人博客
+      hexo yilia 文章浏览量统计
     </h1>
   
 
         
-        <a href="/2017/08/27/使用hexo-yilia-github搭建个人博客/" class="archive-article-date">
-  	<time datetime="2017-08-27T08:54:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-27</time>
+        <a href="/2017/08/30/hexo_yilia_count/" class="archive-article-date">
+  	<time datetime="2017-08-30T06:04:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-30</time>
 </a>
         
       </header>
@@ -234,79 +241,26 @@ var _hmt = _hmt || [];
 		
 		<div id="toc" class="toc-article">
 		<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-本地环境搭建-win7"><span class="toc-number">1.</span> <span class="toc-text">0x01 本地环境搭建(win7)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git安装-git官网"><span class="toc-number">1.1.</span> <span class="toc-text">git安装 (git官网)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-安装-Node官网"><span class="toc-number">1.2.</span> <span class="toc-text">Node.js 安装(Node官网)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-安装hexo"><span class="toc-number">2.</span> <span class="toc-text">0x02 安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-主题切换"><span class="toc-number">3.</span> <span class="toc-text">0x03 主题切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x04-SSH配置"><span class="toc-number">4.</span> <span class="toc-text">0x04 SSH配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x05-域名配置"><span class="toc-number">5.</span> <span class="toc-text">0x05 域名配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x06-鸣谢"><span class="toc-number">6.</span> <span class="toc-text">0x06 鸣谢</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01友盟配置"><span class="toc-number">1.</span> <span class="toc-text">0x01友盟配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-不蒜子配置"><span class="toc-number">2.</span> <span class="toc-text">0x02 不蒜子配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-鸣谢"><span class="toc-number">3.</span> <span class="toc-text">0x03 鸣谢</span></a></li></ol>
 		</div>
 		
-        <p>经过几天的折腾，终于配成功了，现记录如下，本人是在win7上搭建个人博客的。<br><a id="more"></a><!--more--><br>直奔主题，搭建个人博客主要分为以下几步:</p>
-<ul>
-<li>本地环境搭建(win7)</li>
-<li>安装hexo</li>
-<li>主题切换</li>
-<li>SSH配置</li>
-<li>域名配置</li>
-<li>鸣谢</li>
-</ul>
-<p>没错就这上面几步，就能使我们拥有自己的博客网站，帅不帅？酷不酷？</p>
-<hr>
-<h2 id="0x01-本地环境搭建-win7"><a href="#0x01-本地环境搭建-win7" class="headerlink" title="0x01 本地环境搭建(win7)"></a>0x01 本地环境搭建(win7)</h2><ul>
-<li>git安装(因为hexo发布是使用git发布的)</li>
-<li>安Node.js(因为hexo是基于Node.js)<h3 id="git安装-git官网"><a href="#git安装-git官网" class="headerlink" title="git安装 (git官网)"></a>git安装 (<a href="https://git-scm.com/" target="_blank" rel="external">git官网</a>)</h3></li>
-<li><p>windows 进入官网下载最新版安装(下面本人的版本)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git version</div><div class="line">git version 2.7.2.windows.1</div></pre></td></tr></table></figure>
-</li>
-<li><p>Ubuntu下安装git <a href="http://www.linuxidc.com/Linux/2016-11/136769.htm" target="_blank" rel="external">参考,猛点这里</a></p>
-</li>
-<li>Centos下安装git <a href="http://www.linuxidc.com/Linux/2015-02/113351.htm" target="_blank" rel="external">参考,猛点这里</a><h3 id="Node-js-安装-Node官网"><a href="#Node-js-安装-Node官网" class="headerlink" title="Node.js 安装(Node官网)"></a>Node.js 安装(<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Node官网</a>)</h3>值得注意的是，node.js的版本必须6.0以上,出现以下信息就证明安装成功了<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">v6.11.2</div></pre></td></tr></table></figure>
+        <p>上一篇文章，已经比较详细的介绍了如何搭建一个属于自己的专属博客了。现在假如有这样一个需求，我想知道我的博客，每天的访问量大概多少？每天的访问人数大概多少？<br><a id="more"></a><!--more--><br>这时候，就需要用到统计插件了，本人使用2种，<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a>跟<a href="https://web.umeng.com" target="_blank" rel="external">友盟</a></p>
+<h2 id="0x01友盟配置"><a href="#0x01友盟配置" class="headerlink" title="0x01友盟配置"></a>0x01友盟配置</h2><ul>
+<li>获取友盟统计代码<br>先去<a href="https://i.umeng.com/signup" target="_blank" rel="external">友盟官网</a>注册账号,然后,选择站点资料:<br><img src="/assets/img/hexo_count/umeng_details.jpg" alt="umeng_details"><br>点击确定后，在获取代码这栏，根据自己的爱好选择代码，本人选择如下：<img src="/assets/img/hexo_count/umeng_code.jpg" alt="umeng_code"><br>这样友盟的注册已经完成,统计代码也获取到</li>
+<li>配置 yilia<br>新版的yilia如下配置，打开hexo\themes\yilia\layout_partial\footer.ejs,在footer-info，这个div里面，添加你刚刚copy的统计代码,我的如下<img src="/assets/img/hexo_count/umeng_count_code.jpg" alt="umeng_count_code"><br>这样，友盟的统计已经配置好，执行下列代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="0x02-安装hexo"><a href="#0x02-安装hexo" class="headerlink" title="0x02 安装hexo"></a>0x02 安装hexo</h2><p>在安装hexo之前，先介绍hexo常用的几个命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo g #完整命令为hexo generate,生成静态文件</div><div class="line">hexo s #完整命令为hexo server,启动服务器,本地可以测试</div><div class="line">hexo d #完整命令为hexo deploy,将本地编译好的静态文件发布到github上</div><div class="line">hexo n #完整命令为hexo new,新建一篇文章</div><div class="line">hexo clean #清除当前项目的静态文件</div></pre></td></tr></table></figure></p>
-<p>输入以下命令安装hexo:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure></p>
-<p>完成后，根据自己的爱好，在硬盘（如：D)上新建一个hexo的目录，然后在该目录依次执行以下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">npm install（用于安装依赖包）</div></pre></td></tr></table></figure></p>
-<p>执行完成后，输入以下命令，然后通过访问:<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，来访问，一个本地博客就可以看到了，值得注意的是，默认主题是landscape，如需要变主题，得自己手动修改。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
-<h2 id="0x03-主题切换"><a href="#0x03-主题切换" class="headerlink" title="0x03 主题切换"></a>0x03 主题切换</h2><p>本人的主题是 yilia这个主题, <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia地址</a>,在当前项目页,输入以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure></p>
-<p>等待完成，然后:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd themes</div><div class="line">ls -l</div></pre></td></tr></table></figure></p>
-<p>会发现多了一个yilia的目录,然后回到上层,使用sublime或者editplus或者其他文本编辑工具，修改hexo目前下的_config.yml,找到theme项,theme后面的内容修改为yilia,如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: yilia</div><div class="line"></div><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">#coding: git@git.coding.net:JansZeng/hexoblog.git,master</div></pre></td></tr></table></figure></p>
-<p>然后，重新编译，启动：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
-<p>访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>,这时看到的页面是不是不一样了?此时，hexo的安装及主题修改已经完成了.是不是很酷?</p>
-<h2 id="0x04-SSH配置"><a href="#0x04-SSH配置" class="headerlink" title="0x04 SSH配置"></a>0x04 SSH配置</h2><ul>
-<li>登录git</li>
-<li>点击new 创建一个项目,填写后面的名字的时候，需要注意，名称必须为 你的github有户名.github.io,这个一定不能出错,然后点击Create repository,这样创建了一个空项目</li>
-<li>接下来配置SSH,执行下列命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;zxxj157391@163.com&quot;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>连续按三次回车，会在 C:\Users\Administrator.ssh 有三个文件，打开id_rsa.pub文件，copy文件中的内容</p>
-<ul>
-<li>点击Settings</li>
-<li>点击 SSH and GPG Keys</li>
-<li>点击 New SSH Key</li>
-<li>将copy的内容copy到 Key 方框中</li>
-<li>点击 Add SSH Key</li>
-<li><p>打开hexo目录下的_config.yml,找到deploy:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">#coding: git@git.coding.net:JansZeng/hexoblog.git,master</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  #repository: https://github.com:JansZeng/janszeng.github.io.git</div><div class="line">  repo:</div><div class="line">    github: git@github.com:JansZeng/janszeng.github.io.git,master</div></pre></td></tr></table></figure>
-</li>
-<li><p>保存后，重新编译，启动：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>如果出现:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found: git</div></pre></td></tr></table></figure></p>
-<p>执行以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
-<p>然后在执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
-<p>成功话在浏览器输入:<a href="http://janszeng.github.io">http://janszeng.github.io</a>,这样的话，SSH配置完成了</p>
-<h2 id="0x05-域名配置"><a href="#0x05-域名配置" class="headerlink" title="0x05 域名配置"></a>0x05 域名配置</h2><ul>
-<li>去阿里云购买这自己域名(如： janszeng.top)</li>
-<li>进入阿里云后，配置域名解析(域名 –&gt; 解析  –&gt; 添加解析)</li>
-<li><p>在你上述创建的<a href="https://github.com/JansZeng/janszeng.github.io" target="_blank" rel="external">git地址</a>,创建一个名称为CNAME的文件，内容为你购买的域名,如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">www.janszeng.top</div></pre></td></tr></table></figure>
-</li>
-<li><p>将工程下载到本地，将CNAME文件拖到hexo\source目录下,</p>
-</li>
-<li>保存后，重新编译，启动：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="0x06-鸣谢"><a href="#0x06-鸣谢" class="headerlink" title="0x06 鸣谢"></a>0x06 鸣谢</h2><ul>
-<li><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">litten hexo-theme-yilia</a></li>
-<li><a href="http://www.jianshu.com/p/863f3f2d1733" target="_blank" rel="external">沸沸腾 的使用github+Hexo人人都能拥有一个美美的博客</a></li>
-<li><a href="http://tengj.top/2016/02/20/hexoTotal/" target="_blank" rel="external">嘟嘟独立博客 hexo系列文章</a></li>
+<p>然后浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>,这时，在网站底部会有下列显示<img src="/assets/img/hexo_count/umeng_show.jpg" alt="umeng_show"><br>然后，执行下列代码，上传到github:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<h2 id="0x02-不蒜子配置"><a href="#0x02-不蒜子配置" class="headerlink" title="0x02 不蒜子配置"></a>0x02 不蒜子配置</h2><p>不蒜子的配置很简单,先去<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子官网</a>获取代码,修改hexo\themes\yilia\layout_partial\footer.ejs，在后,添加如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script async src=&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>然后，根据个人爱好选择下列代码:<br>网站的总的访问量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;</div><div class="line">	总访问量: &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>网站总的访问人数:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</div><div class="line">	总访客: &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>单页访问量:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;</div><div class="line">  本文总阅读量&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;次</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>下面是本人的一些配置,添加单页访问量,修改hexo\themes\yilia\layout_partial\article.ejs,在&lt;%- partial(‘post/tag’) %&gt; 后添加如下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;</div><div class="line">  |阅读量(&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;)</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<p>添加总的访问量跟总的访问人数,修改hexo\themes\yilia\layout_partial\footer.ejs:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;div calss=&quot;count-span&quot;&gt;</div><div class="line">	&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;</div><div class="line">		总访问量: &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;|</div><div class="line">	&lt;/span&gt;</div><div class="line">	&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</div><div class="line">		总访客: &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;</div><div class="line">	&lt;/span&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>本人footer.ejs,配置如下<img src="/assets/img/hexo_count/footer_count.jpg" alt="footer_count"><br>然后重新编译，运行，就可以看到如下效果了<img src="/assets/img/hexo_count/busuanzi_count.jpg" alt="busuanzi_count"></p>
+<h2 id="0x03-鸣谢"><a href="#0x03-鸣谢" class="headerlink" title="0x03 鸣谢"></a>0x03 鸣谢</h2><ul>
+<li><a href="http://www.jianshu.com/p/cb0a105d7a81" target="_blank" rel="external">不简单的光  hexo yilia主题增加分享以及访问统计</a></li>
+<li><a href="http://readering.me/hexo%E5%8D%9A%E5%AE%A2yilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E5%A2%9E%E5%8A%A0%E7%BD%91%E7%AB%99%E7%BB%9F%E8%AE%A1.html" target="_blank" rel="external">ChenJie hexo博客yilia主题优化（一）增加网站统计</a></li>
 </ul>
 
       
@@ -365,10 +319,10 @@ var _hmt = _hmt || [];
       		
 		</ul>
 	</div>
-
-		<!-- <span id="busuanzi_container_page_pv">
-		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-		</span> -->
+ |
+		<span id="busuanzi_container_page_pv">
+		 阅读量(<span id="busuanzi_value_page_pv"></span>)
+		</span>
       
 
       
@@ -419,7 +373,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://janszeng.github.io/2017/08/27/使用hexo-yilia-github搭建个人博客/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://janszeng.github.io/2017/08/30/hexo_yilia_count/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -431,6 +385,16 @@ var _hmt = _hmt || [];
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/27/hexo_yilia_github_blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用hexo+yilia+github搭建个人博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -452,7 +416,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-本地环境搭建-win7"><span class="toc-number">1.</span> <span class="toc-text">0x01 本地环境搭建(win7)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git安装-git官网"><span class="toc-number">1.1.</span> <span class="toc-text">git安装 (git官网)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-安装-Node官网"><span class="toc-number">1.2.</span> <span class="toc-text">Node.js 安装(Node官网)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-安装hexo"><span class="toc-number">2.</span> <span class="toc-text">0x02 安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-主题切换"><span class="toc-number">3.</span> <span class="toc-text">0x03 主题切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x04-SSH配置"><span class="toc-number">4.</span> <span class="toc-text">0x04 SSH配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x05-域名配置"><span class="toc-number">5.</span> <span class="toc-text">0x05 域名配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x06-鸣谢"><span class="toc-number">6.</span> <span class="toc-text">0x06 鸣谢</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01友盟配置"><span class="toc-number">1.</span> <span class="toc-text">0x01友盟配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-不蒜子配置"><span class="toc-number">2.</span> <span class="toc-text">0x02 不蒜子配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-鸣谢"><span class="toc-number">3.</span> <span class="toc-text">0x03 鸣谢</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -468,7 +432,7 @@ var _hmt = _hmt || [];
   
   
   
-  <div id="SOHUCS" sid="使用hexo-yilia-github搭建个人博客" ></div> 
+  <div id="SOHUCS" sid="hexo_yilia_count" ></div> 
 <script type="text/javascript"> 
 (function(){ 
 var appid = "cytbI0jgz"; 
@@ -497,14 +461,14 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
     	<div class="footer-left">
     		&copy; 2017 JansZeng
     	</div>
-		<div class="foot-middl">
+		<div>
 			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263961645'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1263961645%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 		</div>
       	<!-- <div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div> -->
     </div>
-	<div calss="visit">
+	<div calss="count-span">
 		<span id="busuanzi_container_site_pv">
 			总访问量: <span id="busuanzi_value_site_pv"></span>|
 		</span>
