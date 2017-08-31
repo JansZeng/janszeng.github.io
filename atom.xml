@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-30T09:50:51.449Z</updated>
+  <updated>2017-08-31T08:59:17.967Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo yilia 配置有言跟畅言评论</title>
+    <link href="https://janszeng.github.io/2017/08/31/hexo_yilia_uyan_changyan/"/>
+    <id>https://janszeng.github.io/2017/08/31/hexo_yilia_uyan_changyan/</id>
+    <published>2017-08-31T11:04:22.000Z</published>
+    <updated>2017-08-31T08:59:17.967Z</updated>
+    
+    <content type="html"><![CDATA[<p>上一篇文章《<a href="http://www.janszeng.top/2017/08/30/hexo_yilia_count/" target="_blank" rel="external">hexo yilia 文章浏览量统计</a>》，已经介绍了如何配置统计一个博客的访问量，那么如何配置评论系统呢?<br><a id="more"></a><!--more--><br>常用的有以下几种评论系统:</p>
+<ul>
+<li><a href="http://changyan.kuaizhan.com/" target="_blank" rel="external">畅言</a>(搜狐的评论系统,很强大,但需要有备案号)</li>
+<li><a href="http://www.uyan.cc/" target="_blank" rel="external">友言</a>(不需要备案号,功能也比较强大)</li>
+<li>多说(功能强大，但是已经停止服务)</li>
+<li>disqus(国内经常被墙)<br>本文介绍前面两种</li>
+</ul>
+<h2 id="0x01-畅言"><a href="#0x01-畅言" class="headerlink" title="0x01 畅言"></a>0x01 <a href="http://changyan.kuaizhan.com/" target="_blank" rel="external">畅言</a></h2><ul>
+<li>前往 <a href="http://changyan.kuaizhan.com/" target="_blank" rel="external">畅言官网</a> 注册,注册成功后，按照官网提示，填好东西后，注意填写备案信息</li>
+<li>登录畅言后台，获取自己的appid跟appkey<img src="/assets/img/hexo_discuss/changyan_info.jpg" alt="changyan_info"></li>
+<li>修改hexo\themes\yilia下的_config.yml,把你上述得到的appid跟appkey填写到如下位置:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">widgets:</div><div class="line">   - popular_posts</div><div class="line"></div><div class="line">#2、网易云跟帖</div><div class="line">wangyiyun: false</div><div class="line"></div><div class="line">#3、畅言</div><div class="line">changyan_appid: &apos;&apos;</div><div class="line">changyan_conf: &apos;&apos;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="/assets/img/hexo_discuss/changyan_config.jpg" alt="changyan_config"><br>这样畅言就算配置完成了，重新编译，启动,就可以看到如下:<img src="/assets/img/hexo_discuss/changyan_style.jpg" alt="changyan_style"><br>因为我没有备案号，所以看到是试用版</p>
+<h2 id="0x02-配置友言"><a href="#0x02-配置友言" class="headerlink" title="0x02 配置友言"></a>0x02 配置友言</h2><ul>
+<li>前往 <a href="http://www.uyan.cc/" target="_blank" rel="external">友言官网</a> 注册,注册成功后,获取友言代码<img src="/assets/img/hexo_discuss/uyan_code.jpg" alt="uyan_code"></li>
+<li>在hexo\themes\yilia\layout_partial\post\下新建一个uyan.ejs的文件,将上述代码copy到该文件中<img src="/assets/img/hexo_discuss/uyan_list.jpg" alt="uyan_list"></li>
+<li>修改hexo\themes\yilia\layout_partial\article.ejs,找到<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;% if (!index &amp;&amp; post.comments)&#123; %&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在此下方添加下列代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;% if (theme.uyan)&#123; %&gt;&lt;%- partial(&apos;post/uyan&apos;, &#123;key: post.slug,title: post.title,url: config.url+url_for(post.path)&#125;) %&gt;&lt;% &#125; %&gt;</div></pre></td></tr></table></figure></p>
+<p>如下：<br><img src="/assets/img/hexo_discuss/uyan_add.jpg" alt="uyan_add"></p>
+<ul>
+<li>获取你的id <img src="/assets/img/hexo_discuss/uyan_id.jpg" alt="uyan_id"></li>
+<li>修改hexo\themes\yilia下的_config.yml,在空白处,添加如下配置:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uyan: &apos;&apos;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这样友言已经配置好了，具体效果如下:<img src="/assets/img/hexo_discuss/uyan_style.jpg" alt="uyan_style"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上一篇文章《&lt;a href=&quot;http://www.janszeng.top/2017/08/30/hexo_yilia_count/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo yilia 文章浏览量统计&lt;/a&gt;》，已经介绍了如何配置统计一个博客的访问量，那么如何配置评论系统呢?&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="yilia" scheme="https://janszeng.github.io/tags/yilia/"/>
+    
+      <category term="畅言" scheme="https://janszeng.github.io/tags/%E7%95%85%E8%A8%80/"/>
+    
+      <category term="友言" scheme="https://janszeng.github.io/tags/%E5%8F%8B%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo yilia 文章浏览量统计</title>
