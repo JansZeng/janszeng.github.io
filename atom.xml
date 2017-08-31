@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-31T09:11:14.413Z</updated>
+  <updated>2017-08-31T09:13:39.003Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://janszeng.github.io/2017/08/31/hexo_yilia_uyan_changyan/"/>
     <id>https://janszeng.github.io/2017/08/31/hexo_yilia_uyan_changyan/</id>
     <published>2017-08-31T09:04:22.000Z</published>
-    <updated>2017-08-31T09:11:14.413Z</updated>
+    <updated>2017-08-31T09:13:39.003Z</updated>
     
     <content type="html"><![CDATA[<p>上一篇文章《<a href="http://www.janszeng.top/2017/08/30/hexo_yilia_count/" target="_blank" rel="external">hexo yilia 文章浏览量统计</a>》，已经介绍了如何配置统计一个博客的访问量，那么如何配置评论系统呢?<br><a id="more"></a><!--more--><br>常用的有以下几种评论系统:</p>
 <ul>
@@ -50,6 +50,9 @@
 </li>
 </ul>
 <p>这样友言已经配置好了，具体效果如下:<img src="/assets/img/hexo_discuss/uyan_style.jpg" alt="uyan_style"></p>
+<h2 id="0x03-鸣谢"><a href="#0x03-鸣谢" class="headerlink" title="0x03 鸣谢"></a>0x03 鸣谢</h2><ul>
+<li><a href="http://www.baipai365.win/2017/07/28/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90%E5%8F%8B%E8%A8%80%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B/" target="_blank" rel="external">Dr.Shiranai 【原创】Hexo博客集成友言评论系统教程</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
