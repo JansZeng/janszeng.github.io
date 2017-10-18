@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janszeng.github.io/"/>
-  <updated>2017-08-31T09:16:17.687Z</updated>
+  <updated>2017-10-18T09:52:18.468Z</updated>
   <id>https://janszeng.github.io/</id>
   
   <author>
@@ -16,11 +16,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SpringBoot学习资源汇总</title>
+    <link href="https://janszeng.github.io/2017/10/18/springboot_learn/"/>
+    <id>https://janszeng.github.io/2017/10/18/springboot_learn/</id>
+    <published>2017-10-18T09:42:00.000Z</published>
+    <updated>2017-10-18T09:52:18.468Z</updated>
+    
+    <content type="html"><![CDATA[<p>对于初学SpringBoot的人来说，学习资源一直是个很头疼的问题，我也是初学者，资源很难找，下面把我知道的列在下面，方便各位老铁<br><a id="more"></a><!--more--></p>
+<h2 id="0x01-恒宇少年-简书-SpringBoot学习目录"><a href="#0x01-恒宇少年-简书-SpringBoot学习目录" class="headerlink" title="0x01 恒宇少年 简书 SpringBoot学习目录"></a>0x01 恒宇少年 简书 SpringBoot学习目录</h2><p>我是初学者，觉得写的不错，地址： <a href="http://www.jianshu.com/p/9a08417e4e84" target="_blank" rel="external">SpringBoot学习目录</a><br>SpringBoot学习目录 <a href="https://gitee.com/jnyqy/lessons" target="_blank" rel="external">随文档的代码地址</a></p>
+<h2 id="0x02-纯洁的微笑-springboot-系列教程"><a href="#0x02-纯洁的微笑-springboot-系列教程" class="headerlink" title="0x02 纯洁的微笑 springboot 系列教程"></a>0x02 纯洁的微笑 springboot 系列教程</h2><p>地址： <a href="http://www.ityouknow.com/spring-boot" target="_blank" rel="external">springboot 系列教程</a><br>springboot 系列教程 <a href="https://github.com/ityouknow/spring-boot-examples" target="_blank" rel="external">随文档的代码地址</a></p>
+<h2 id="0x03-特别感谢"><a href="#0x03-特别感谢" class="headerlink" title="0x03 特别感谢"></a>0x03 特别感谢</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于初学SpringBoot的人来说，学习资源一直是个很头疼的问题，我也是初学者，资源很难找，下面把我知道的列在下面，方便各位老铁&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="SpringBoot" scheme="https://janszeng.github.io/tags/SpringBoot/"/>
+    
+      <category term="Java" scheme="https://janszeng.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo yilia 添加友言畅言评论支持</title>
     <link href="https://janszeng.github.io/2017/08/31/hexo_yilia_uyan_changyan/"/>
     <id>https://janszeng.github.io/2017/08/31/hexo_yilia_uyan_changyan/</id>
     <published>2017-08-31T09:04:22.000Z</published>
-    <updated>2017-08-31T09:16:17.687Z</updated>
+    <updated>2017-10-18T09:51:59.423Z</updated>
     
     <content type="html"><![CDATA[<p>上一篇文章《<a href="http://www.janszeng.top/2017/08/30/hexo_yilia_count/" target="_blank" rel="external">hexo yilia 文章浏览量统计</a>》，已经介绍了如何配置统计一个博客的访问量，那么如何配置评论系统呢?<br><a id="more"></a><!--more--><br>常用的有以下几种评论系统:</p>
 <ul>
@@ -104,11 +129,11 @@
     </summary>
     
     
-      <category term="yilia" scheme="https://janszeng.github.io/tags/yilia/"/>
-    
       <category term="blog" scheme="https://janszeng.github.io/tags/blog/"/>
     
       <category term="hexo" scheme="https://janszeng.github.io/tags/hexo/"/>
+    
+      <category term="yilia" scheme="https://janszeng.github.io/tags/yilia/"/>
     
   </entry>
   
@@ -199,11 +224,11 @@
     </summary>
     
     
-      <category term="yilia" scheme="https://janszeng.github.io/tags/yilia/"/>
-    
       <category term="blog" scheme="https://janszeng.github.io/tags/blog/"/>
     
       <category term="hexo" scheme="https://janszeng.github.io/tags/hexo/"/>
+    
+      <category term="yilia" scheme="https://janszeng.github.io/tags/yilia/"/>
     
   </entry>
   
