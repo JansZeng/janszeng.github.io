@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://janszeng.github.io">
-  <title>Tag: blog | Crawler</title>
+  <title>Mac Pro 配置java8环境 | Crawler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="不断学习,熟练使用C#、Go、Javascript,熟悉Java,熟悉apk逆向,熟练使用apk反编译工具,了解Python">
-<meta name="keywords" content="爬虫,逆向,apk逆向,apk反编译,java,C#,.NET,go,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,crawler,app逆向">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Crawler">
-<meta property="og:url" content="https://janszeng.github.io/tags/blog/index.html">
+  <meta name="description" content="目前mac下安装java环境有点麻烦，折腾了一段时间，终于安装成功，下面是一些记录，方便有同样需要的人">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac Pro 配置java8环境">
+<meta property="og:url" content="https://janszeng.github.io/2017/10/19/mac_java_ev/index.html">
 <meta property="og:site_name" content="Crawler">
-<meta property="og:description" content="不断学习,熟练使用C#、Go、Javascript,熟悉Java,熟悉apk逆向,熟练使用apk反编译工具,了解Python">
+<meta property="og:description" content="目前mac下安装java环境有点麻烦，折腾了一段时间，终于安装成功，下面是一些记录，方便有同样需要的人">
+<meta property="og:updated_time" content="2017-10-19T06:11:41.099Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Crawler">
-<meta name="twitter:description" content="不断学习,熟练使用C#、Go、Javascript,熟悉Java,熟悉apk逆向,熟练使用apk反编译工具,了解Python">
+<meta name="twitter:title" content="Mac Pro 配置java8环境">
+<meta name="twitter:description" content="目前mac下安装java环境有点麻烦，折腾了一段时间，终于安装成功，下面是一些记录，方便有同样需要的人">
   
     <link rel="alternative" href="/atom.xml" title="Crawler" type="application/atom+xml">
   
@@ -209,114 +210,225 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-mac_java_ev" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/30/hexo_yilia_count/" class="archive-article-date">
-  	<time datetime="2017-08-30T06:04:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/30/hexo_yilia_count/">hexo yilia 文章浏览量统计</a>
+    <h1 class="article-title" itemprop="name">
+      Mac Pro 配置java8环境
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/10/19/mac_java_ev/" class="archive-article-date">
+  	<time datetime="2017-10-19T05:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		<!-- Table of Contents -->
+		
+		<div id="toc" class="toc-article">
+		<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x01-安装brew-mac下安装软件工具"><span class="toc-number">1.</span> <span class="toc-text">0x01 安装brew(mac下安装软件工具)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x02-安装java8"><span class="toc-number">2.</span> <span class="toc-text">0x02 安装java8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x03-配置java8"><span class="toc-number">3.</span> <span class="toc-text">0x03 配置java8</span></a></li></ol>
+		</div>
+		
+        <p>目前mac下安装java环境有点麻烦，折腾了一段时间，终于安装成功，下面是一些记录，方便有同样需要的人<br><a id="more"></a></p>
+<h4 id="0x01-安装brew-mac下安装软件工具"><a href="#0x01-安装brew-mac下安装软件工具" class="headerlink" title="0x01 安装brew(mac下安装软件工具)"></a>0x01 安装brew(mac下安装软件工具)</h4><p><a href="https://brew.sh/" target="_blank" rel="external">brew 官网地址</a>,按下键盘 command + n,打开一个新的terminal，输入以下命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</div></pre></td></tr></table></figure></p>
+<p>等待完成，brew已经安装完成了</p>
+<h4 id="0x02-安装java8"><a href="#0x02-安装java8" class="headerlink" title="0x02 安装java8"></a>0x02 安装java8</h4><p>在terminal下输入下列命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">brew tap caskroom/versions</div><div class="line">brew search &quot;java8&quot;</div><div class="line">brew cask intall java8</div></pre></td></tr></table></figure></p>
+<p>直至安装完成，输入以下命令看是否安装成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -version</div></pre></td></tr></table></figure></p>
+<h4 id="0x03-配置java8"><a href="#0x03-配置java8" class="headerlink" title="0x03 配置java8"></a>0x03 配置java8</h4><ul>
+<li>1.打开Shell输入  vi ~/.bash_profile </li>
+<li>2.i &gt;输入&gt;esc&gt;:wq保存<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home  </div><div class="line">PATH=$JAVA_HOME/bin:$PATH  </div><div class="line">CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home 至于怎么查找这个地址,输入下列命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/libexec/java_home -v 1.8</div></pre></td></tr></table></figure></p>
+<ul>
+<li>3.修改环境变量后命令：source ~/.base_profile</li>
+<li>4.查看修改后的环境变量 ： echo ~/.base_profile</li>
+<li>5.在Shell中查看当前Java版本号： java -version </li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢支持,您的支持是我最大的努力<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
 	</div>
+ |
+	  <!--<span id="busuanzi_container_page_pv">
+		 阅读量(<span id="busuanzi_value_page_pv"></span>)
+		</span>-->
+      
 
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://janszeng.github.io/2017/10/19/mac_java_ev/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/27/hexo_yilia_github_blog/" class="archive-article-date">
-  	<time datetime="2017-08-27T08:54:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-27</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/18/springboot_learn/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringBoot学习资源汇总</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/27/hexo_yilia_github_blog/">使用hexo+yilia+github搭建个人博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#0x01-安装brew-mac下安装软件工具"><span class="toc-number">1.</span> <span class="toc-text">0x01 安装brew(mac下安装软件工具)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x02-安装java8"><span class="toc-number">2.</span> <span class="toc-text">0x02 安装java8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#0x03-配置java8"><span class="toc-number">3.</span> <span class="toc-text">0x03 配置java8</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
+  
+  
+  
+  
+  
+<!-- UY BEGIN -->
+<div id="uyan_frame" class="article-entry article article-type-post" style="padding-top:10px;"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2142693"></script>
+<!-- UY END -->
+
   
 
-    
+
+  
+
+
+
 
 
           </div>
@@ -351,9 +463,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
